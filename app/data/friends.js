@@ -1,91 +1,90 @@
-var friends = [
+var characters = [
     {
-    "name": "Jenna",
+    "name": "reinhardt",
     "photo": "",
     "scores": 
         [
-            5,
-            1,
-            4,
             4,
             5,
-            1,
-            2,
+            3,
             5,
+            3,
             4,
-            1
+            4
         ]
     },
 
     {
-        "name": "Leslie",
+        "name": "Zarya",
         "photo": "",
         "scores": 
             [
-                1,
-                5,
-                1,
                 4,
-                5,
-                3,
                 4,
-                1,
                 4,
-                3
-            ]
-    },
-
-    {
-        "name": "Karina",
-        "photo": "",
-        "scores": 
-            [
-                2,
-                1,
-                2,
-                3,
-                5,
-                1,
-                3,
                 4,
-                5,
-                1
-            ]
-    },
-
-    {
-        "name": "Sofia",
-        "photo": "",
-        "scores": 
-            [
-                3,
-                2,
                 4,
-                1,
-                2,
                 4,
-                3,
-                5,
-                1,
                 5
             ]
     },
 
     {
-        "name": "Alexis",
+        "name": "Reaper",
         "photo": "",
         "scores": 
             [
-                4,
-                4,
-                3,
-                1,
+                5,
                 1,
                 2,
-                3,
                 2,
+                5,
                 1,
                 3
+            ]
+    },
+
+    {
+        "name": "Mei",
+        "photo": "",
+        "scores": 
+            [
+                3,
+                5,
+                4,
+                4,
+                2,
+                4,
+                3
+            ]
+    },
+
+    {
+        "name": "Mercy",
+        "photo": "",
+        "scores": 
+            [
+                1,
+                4,
+                5,
+                5,
+                1,
+                5,
+                3
+            ]
+    },
+    {
+        "name": "Baptiste",
+        "photo": "",
+        "scores": 
+            [
+                2,
+                4,
+                5,
+                4,
+                2,
+                4,
+                5
             ]
     }
 ]

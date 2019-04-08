@@ -1,6 +1,6 @@
-var friends = [
+var characters = [
     {
-    "name": "Jenna",
+    "name": "reinhardt",
     "photo": "",
     "scores": 
         [
@@ -18,7 +18,7 @@ var friends = [
     },
 
     {
-        "name": "Leslie",
+        "name": "Zarya",
         "photo": "",
         "scores": 
             [
@@ -36,7 +36,7 @@ var friends = [
     },
 
     {
-        "name": "Karina",
+        "name": "Reaper",
         "photo": "",
         "scores": 
             [
@@ -54,7 +54,7 @@ var friends = [
     },
 
     {
-        "name": "Sofia",
+        "name": "Mei",
         "photo": "",
         "scores": 
             [
@@ -72,7 +72,24 @@ var friends = [
     },
 
     {
-        "name": "Alexis",
+        "name": "Mercy",
+        "photo": "",
+        "scores": 
+            [
+                4,
+                4,
+                3,
+                1,
+                1,
+                2,
+                3,
+                2,
+                1,
+                3
+            ]
+    },
+    {
+        "name": "Baptiste",
         "photo": "",
         "scores": 
             [

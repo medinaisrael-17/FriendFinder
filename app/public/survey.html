@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <title>Friend Finder</title>
 
     <h1>Survey</h1>
@@ -12,92 +17,163 @@
 </head>
 
 <body>
-    <div class="aboutYou">
-        <h2>About You</h2>
-        <h3>Name (Required)</h3>
-        <input type="text" id="name">
-        <h3>Link To A Photo Image (Required)</h3>
-        <p>(It can be an image of anything)</p>
-        <input type="text" id="pic">
-    </div>
-
-    <div class=questions>
-        <h2>Quetion 1</h2>
-        <h4>You enjoy supporting the team in offense and prefer to be on the front lines.</h4>
-        <input type="radio" value="1" name="question1"> 1 (Strongly Disagree)
-        <input type="radio" value="2" name="question1"> 2
-        <input type="radio" value="3" name="question1"> 3
-        <input type="radio" value="4" name="question1"> 4
-        <input type="radio" value="5" name="question1"> 5 (Strongly Agree) <br>
-    </div>
-
-    <div class=questions>
-        <h2>Quetion 2</h2>
-        <h4>You enjoy supporting the team in defense and prefer to be supportive to teammates.</h4>
-        <input type="radio" value="1" name="question2"> 1 (Strongly Disagree)
-        <input type="radio" value="2" name="question2"> 2
-        <input type="radio" value="3" name="question2"> 3
-        <input type="radio" value="4" name="question2"> 4
-        <input type="radio" value="5" name="question2"> 5 (Strongly Agree) <br>
-    </div>
-
-    <div class=questions>
-        <h2>Quetion 3</h2>
-        <h4>You enjoy the idea of a team but prefer to be more on your own.</h4>
-        <input type="radio" value="1" name="question3"> 1 (Strongly Disagree)
-        <input type="radio" value="2" name="question3"> 2
-        <input type="radio" value="3" name="question3"> 3
-        <input type="radio" value="4" name="question3"> 4
-        <input type="radio" value="5" name="question3"> 5 (Strongly Agree) <br>
-    </div>
-
-    <div class=questions>
-        <h2>Quetion 4</h2>
-        <h4>The team is very important to you and you feel you can get more done on a team than on your own.</h4>
-        <input type="radio" value="1" name="question4"> 1 (Strongly Disagree)
-        <input type="radio" value="2" name="question4"> 2
-        <input type="radio" value="3" name="question4"> 3
-        <input type="radio" value="4" name="question4"> 4
-        <input type="radio" value="5" name="question4"> 5 (Strongly Agree) <br>
-    </div>
-
-    <div class=questions>
-        <h2>Quetion 5</h2>
-        <h4>You enjoy the thrill of hunting enemies.</h4>
-        <input type="radio" value="1" name="question5"> 1 (Strongly Disagree)
-        <input type="radio" value="2" name="question5"> 2
-        <input type="radio" value="3" name="question5"> 3
-        <input type="radio" value="4" name="question5"> 4
-        <input type="radio" value="5" name="question5"> 5 (Strongly Agree) <br>
-    </div>
-
-    <div class=questions>
-        <h2>Quetion 6</h2>
-        <h4>You enjoy offering helping in anyway you can and enjoy seeing your teammates succeed.</h4>
-        <input type="radio" value="1" name="question6"> 1 (Strongly Disagree)
-        <input type="radio" value="2" name="question6"> 2
-        <input type="radio" value="3" name="question6"> 3
-        <input type="radio" value="4" name="question6"> 4
-        <input type="radio" value="5" name="question6"> 5 (Strongly Agree) <br>
-    </div>
-
-    <div class=questions>
-            <h2>Quetion 7</h2>
-            <h4>Helping your teammates is great and you enjoy dealing damage as well.</h4>
-            <input type="radio" value="1" name="question7"> 1 (Strongly Disagree)
-            <input type="radio" value="2" name="question7"> 2
-            <input type="radio" value="3" name="question7"> 3
-            <input type="radio" value="4" name="question7"> 4
-            <input type="radio" value="5" name="question7"> 5 (Strongly Agree) <br>
+    <form id="survey">
+        <div class="aboutYou">
+            <h2>About You</h2>
+            <h3>Name (Required)</h3>
+            <input type="text" id="name">
+            <h3>Link To A Photo Image (Required)</h3>
+            <p>(It can be an image of anything)</p>
+            <input type="text" id="pic">
         </div>
+
+        <h2>Question 1</h2>
+        <label for="questionSelect1">You enjoy supporting the team in offense and prefer to be on the front
+            lines.</label>
+        <br>
+        <select class="form-control" id="question1">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h2>Question 2</h2>
+        <label for="questionSelect2">You enjoy supporting the team in defense and prefer to be supportive to
+            teammates.</label>
+        <br>
+        <select class="form-control" id="question2">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h2>Question 3</h2>
+        <label for="questionSelect3">You enjoy the idea of a team but prefer to be more on your own.</label>
+        <br>
+        <select class="form-control" id="question3">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h2>Question 4</h2>
+        <label for="questionSelect4">The team is very important to you and you feel you can get more done on a team than
+            on your own.</label>
+        <br>
+        <select class="form-control" id="question4">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h2>Question 5</h2>
+        <label for="questionSelect5">You enjoy the thrill of hunting enemies.</label>
+        <br>
+        <select class="form-control" id="question5">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h2>Question 6</h2>
+        <label for="questionSelect6">You enjoy offering helping in anyway you can and enjoy seeing your teammates
+            succeed.</label>
+        <br>
+        <select class="form-control" id="question6">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h2>Question 7</h2>
+        <label for="questionSelect7">Helping your teammates is great and you enjoy dealing damage as well.</label>
+        <br>
+        <select class="form-control" id="question7">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <br>
+
+        <button type="submit">Submit!</button>
+
+    </form>
 
 </body>
 
 <br>
 
 <div id="external_links">
-    <a href="#">API Main List</a>
+    <a href="/api/characters">API Main List</a>
     <a href="https://github.com/medinaisrael-17/FriendFinder">GitHub Repo</a>
 </div>
+
+<script type="text/javascript">
+    $("button").on("click", function (event) {
+        event.preventDefault();
+
+        if (!$("#name").val() || !$("#pic").val()) {
+            alert("Please fill out the entire form before submitting")
+        }
+
+        else {
+
+            var newUser = {
+                name: $("#name").val().trim(),
+                photo: $("#pic").val().trim(),
+                scores: [
+                    $("#question1").val(),
+                    $("#question2").val(),
+                    $("#question3").val(),
+                    $("#question4").val(),
+                    $("#question5").val(),
+                    $("#question6").val(),
+                    $("#question7").val()
+                ]
+            };
+
+            console.log(newUser);
+
+            $.post("/api/characters", newUser,
+                function (data) {
+                    if (data) {
+                        alert("added to the database");
+                    }
+
+                    $("#name").val("");
+                    $("#pic").val("");
+                })
+
+            // $.ajax("/api/characters", {
+            //     type: "POST",
+            //     data: newUser
+            // }).then(
+            //     function () {
+            //         console.log("added the user")
+
+            //         location.reload();
+
+            //     }
+            // )
+
+        }
+    })
+
+</script>
 
 </html>

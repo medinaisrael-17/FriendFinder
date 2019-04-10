@@ -126,13 +126,14 @@
 <script type="text/javascript">
     $("button").on("click", function (event) {
         event.preventDefault();
+        debugger;
 
         if (!$("#name").val() || !$("#pic").val()) {
             alert("Please fill out the entire form before submitting")
+            location.reload();
         }
 
         else {
-
             var newUser = {
                 name: $("#name").val().trim(),
                 photo: $("#pic").val().trim(),
@@ -157,7 +158,8 @@
 
                     $("#name").val("");
                     $("#pic").val("");
-                })
+                }
+            );
 
             // $.ajax("/api/characters", {
             //     type: "POST",
